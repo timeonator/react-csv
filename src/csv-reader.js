@@ -2,7 +2,7 @@ import React from 'react'
 import Papa from 'papaparse'
 import Table from 'react-table'
 
-export default function CsvReader() {
+function CsvReader() {
   const [rows, setRows] = React.useState([])
   React.useEffect(() => {
     async function getData() {
@@ -22,4 +22,5 @@ export default function CsvReader() {
       <Table cols={tripColumns} rows={rows} />
     </div>
   )
-}
+} 
+export default CsvReader
