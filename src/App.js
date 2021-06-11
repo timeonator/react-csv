@@ -1,13 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import CsvReader from 'csv-reader'
+import './App.css'
+import SampleTable from './sample-table'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
       </header>
-      <CsvReader />
+      <SampleTable />
     </div>
   );
 }
