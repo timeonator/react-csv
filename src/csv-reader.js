@@ -19,7 +19,7 @@ function CsvReader() {
   }, []) // [] means just do this once, after initial render
   return (
     <div className="app">
-      <Table cols={tripColumns} rows={rows} />
+      <Table rows={rows} />
     </div>
   )
 } 
