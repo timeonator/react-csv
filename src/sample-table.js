@@ -43,6 +43,7 @@ import { useTable } from 'react-table'
    } = useTable({ columns, data })
  
    return (
+    <>
      <table {...getTableProps()} style={{ border: 'solid 1px blue' }}>
        <thead>
          {headerGroups.map(headerGroup => (
@@ -87,6 +88,7 @@ import { useTable } from 'react-table'
          })}
        </tbody>
      </table>
+    </>
    )
  }
  export default SampleTable
