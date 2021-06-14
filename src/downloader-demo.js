@@ -35,7 +35,7 @@ export default class DownloaderDemo extends Component {
         type="button"
         filename={'filename'}
       >
-        Download
+        DownloadFile
       </CSVDownloader>
     );
   }
