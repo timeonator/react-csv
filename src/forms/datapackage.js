@@ -15,8 +15,13 @@ import React, {useState} from 'react';// {
 //   }
 
 var DataPackage = () => {
+        const [name, setName]=useState("");
+        const [title,setTitle]=useState("")
+        const [license, setLicense]=useState("")
+        const [sources, setSources]=useState("")
+        const [resources, setResources]=useState("")
+        const [id, setId]=useState("")       
 
-    var id, name, title, license, sources, resources;
 
     var data = {
         "name": name,
@@ -29,14 +34,14 @@ var DataPackage = () => {
     var handleSubmit = () => {
         console.log(data);
     }
-    return(
+     return(
         <>
-        Id:  <input type="text" value={id} />
-        Name:  <input type="text" value={name} /> 
-        Title: <input type="text" value={title} />
-        Licenses: <input type="text" value={license} />
-        Sources: <input type="text" value={sources} /> 
-        Resources: <input type="text" value={resources} />
+        Id:  <input type="text" value={id} onChange={e => setId(e.target.value)} />
+        Name:  <input type="text" value={name} onChange={e => setName(e.target.value)}/> 
+        Title: <input type="text" value={title} onChange={e => setTitle(e.target.value)}/>
+        Licenses: <input type="text" value={license} onChange={e => setLicense(e.target.value)}/>
+        Sources: <input type="text" value={sources} onChange={e => setSources(e.target.value)}/> 
+        Resources: <input type="text" value={resources} onChange={e => setResources(e.target.value)}/>
         <button name="Submit" onClick= {handleSubmit} />
         </>
   )
